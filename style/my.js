@@ -2,7 +2,7 @@
  * @Author: liushengxiao 
  * @Date: 2021-05-09 11:36:32 
  * @Last Modified by: liushengxiao
- * @Last Modified time: 2021-06-11 17:10:21
+ * @Last Modified time: 2021-06-11 17:18:13
  */
 
 
@@ -125,10 +125,9 @@ $("#lotteryBtn").rotate({
 var rotateFunc = (awards, angle, text) => { //awards:奖项，angle:奖项对应的角度
     $('.rotate-bg').stopRotate();
     $(".rotate-bg").rotate({
-        angle: 0,
-        duration: 5000,
-        animateTo: angle + 1440, //angle是图片上各奖项对应的角度，1440是我要让指针旋转4圈。所以最后的结束的角度就是这样子^^
-        callback: function() {
+            angle: 0,
+            duration: 5000,
+            animateTo: angle + 1440, //1440是我要让指针旋转4圈。
             swal(text)
 
         }
