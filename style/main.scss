@@ -1,8 +1,7 @@
 /*
-* @Author: Marte
+* @Author: soiieking
 * @Date:   2018-09-12 10:37:24
- * @Last Modified by: liushengxiao
- * @Last Modified time: 2021-05-11 15:34:21
+ * @Last Modified time: 2021-06-11 17:33:15
 */
 
 * {
@@ -11,9 +10,8 @@
 }
 
 body {
-    background-color: #42cafc;
+    background-color: #2c2c2c;
     padding-right: 0px !important;
-    background-image: linear-gradient(to bottom, #b0ee75, #b0ee75, #b0ee75, #0ab3aa);
 }
 
 
@@ -33,7 +31,7 @@ body {
     height: 100vw;
     margin: 0px auto;
     overflow: hidden;
-    background-color: red;
+    //background-color: red;
     .rotate-bg {
         width: 100vw;
         height: 100vw;
@@ -65,10 +63,6 @@ body {
         position: absolute;
         top: 27vw;
         left: 27vw;
-        /*text-indent:-999em;
-        overflow:hidden;
-        background:url(rotate-static.png);
-        -webkit-transform:rotate(0deg);*/
         outline: none;
         #lotteryBtn {
             cursor: pointer;

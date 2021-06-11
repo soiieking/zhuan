@@ -2,7 +2,7 @@
  * @Author: liushengxiao 
  * @Date: 2021-05-09 11:36:32 
  * @Last Modified by: liushengxiao
- * @Last Modified time: 2021-06-11 17:18:13
+ * @Last Modified time: 2021-06-11 17:31:13
  */
 
 
@@ -82,9 +82,7 @@ $("#lotteryBtn").rotate({
                 swal('对不起，当前没有抽奖次数')
             } else {
                 chou--; //抽奖次数-1
-                setTimeout(() => {
-                    $('.jihui>h1>span').html(chou); //更新页面抽奖机会次数
-                }, 2000);
+                console.log(`剩余抽奖次数${chou}`);
                 //随机获得一个中奖角度
                 function suiji(n, m) { return Math.floor(Math.random() * (m - n + 1) + n) };
                 let jiang = suiji(1, base_number); //根据大转盘奖品份数，随机获得一项。
@@ -125,9 +123,10 @@ $("#lotteryBtn").rotate({
 var rotateFunc = (awards, angle, text) => { //awards:奖项，angle:奖项对应的角度
     $('.rotate-bg').stopRotate();
     $(".rotate-bg").rotate({
-            angle: 0,
-            duration: 5000,
-            animateTo: angle + 1440, //1440是我要让指针旋转4圈。
+        angle: 0,
+        duration: 5000,
+        animateTo: angle + 1440,
+        callback: function() {
             swal(text)
 
         }
