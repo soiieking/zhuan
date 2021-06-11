@@ -2,7 +2,7 @@
  * @Author: liushengxiao 
  * @Date: 2021-05-09 11:36:32 
  * @Last Modified by: liushengxiao
- * @Last Modified time: 2021-06-11 17:01:42
+ * @Last Modified time: 2021-06-11 17:10:21
  */
 
 
@@ -16,7 +16,7 @@ const base_number = 8; //将大转盘的角度分为8份
 //写入每一项奖品的角度数据
 let base_angle = []
 for (let i = 0; i < base_number; i++) {
-    base_angle[i] = (360 / base_number) * (i + 1) - ((360 / base_number) / 2); //减去了22度是因为当前转盘为8份，每一份45度，若想指针在中间，则45/2 得到22度的位移
+    base_angle[i] = (360 / base_number) * (i + 1) - ((360 / base_number) / 2);
 }
 /*定义奖项的文字描述
     1.这里的子数据，应该和大转盘的份数保持一致，多了无所谓，少了可能报错。
