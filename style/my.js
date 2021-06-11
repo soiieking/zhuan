@@ -2,16 +2,12 @@
  * @Author: liushengxiao 
  * @Date: 2021-05-09 11:36:32 
  * @Last Modified by: liushengxiao
- * @Last Modified time: 2021-06-08 17:15:24
+ * @Last Modified time: 2021-06-11 16:59:32
  */
 
 
 
-
-
 //对大转盘进行一版优化
-
-
 //当前抽奖机会次数
 let chou = 3;
 $('.jihui>h1>span').html(chou); //写入抽奖机会次数
@@ -37,43 +33,43 @@ const base_text = [{
         title: "恭喜你，抽到二等奖!",
         text: "您获得了小米手环，请<a href='中奖信息填写表单.html' style='color:#F8BB86'>点击这里填写收货信息</a>！",
         html: true,
-        showConfirmButton: false,
+        showConfirmButton: true, //如果希望不要显示确认按钮，设置为false即可。
     },
     {
         title: "恭喜你，抽到七等奖!",
         text: "您获得了全屋wifi免费上门检测特权，请<a href='中奖信息填写表单.html' style='color:#F8BB86'>点击这里领取</a>！",
         html: true,
-        showConfirmButton: false,
+        showConfirmButton: true,
     },
     {
         title: "恭喜你，抽到一等奖!",
         text: "您获得了小米扫地机器人，请<a href='中奖信息填写表单.html' style='color:#F8BB86'>点击这里填写收货信息</a>！",
         html: true,
-        showConfirmButton: false,
+        showConfirmButton: true,
     },
     {
         title: "恭喜你，抽到三等奖!",
         text: "您获得了行车记录仪，请<a href='中奖信息填写表单.html' style='color:#F8BB86'>点击这里填写收货信息</a>！",
         html: true,
-        showConfirmButton: false,
+        showConfirmButton: true,
     },
     {
         title: "恭喜你，抽到六等奖!",
         text: "您获得了视频彩铃（首月免费），请<a href='中奖信息填写表单.html' style='color:#F8BB86'>点击这里领取</a>！",
         html: true,
-        showConfirmButton: false,
+        showConfirmButton: true,
     },
     {
         title: "恭喜你，抽到四等奖!",
         text: "您获得了烧烤炉+帐篷，请<a href='中奖信息填写表单.html' style='color:#F8BB86'>点击这里领取</a>！",
         html: true,
-        showConfirmButton: false,
+        showConfirmButton: true,
     },
     {
         title: "恭喜你，抽到五等奖!",
         text: "您获得了空气炸锅，请<a href='中奖信息填写表单.html' style='color:#F8BB86'>点击这里领取</a>！",
         html: true,
-        showConfirmButton: false,
+        showConfirmButton: true,
     },
 ]
 
