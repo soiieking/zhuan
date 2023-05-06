@@ -14,5 +14,5 @@ const base_number = 8; //将大转盘的角度分为8份
 ```
 ## 模板
 
-
+![Alt text](images/ly-plate.png)
 ## 调试
