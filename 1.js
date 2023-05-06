@@ -1,18 +1,22 @@
 zhuanpan_config: [
     {
-        name: '恭喜您获得一等奖',
-        desc: '100分钟语音'
+        name: '一等奖',
+        desc: '烧烤火炉一体机'
     },
     {
-        name: '恭喜您获得二等奖',
-        desc: '3GB流量'
+        name: '二等奖',
+        desc: '足球'
     },
     {
-        name: '恭喜您获得三等奖',
-        desc: '1GB流量'
+        name: '三等奖',
+        desc: '便携榨汁机'
+    },
+    {
+        name: '四等奖',
+        desc: '3GB流量包'
     },
     {
         name: '很遗憾，未中奖',
         desc: '谢谢参与'
-    },
+    }
 ]

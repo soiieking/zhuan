@@ -2,7 +2,7 @@
  * @Author: liushengxiao 
  * @Date: 2022-11-20 16:11:17 
  * @Last Modified by: liushengxiao
- * @Last Modified time: 2023-05-06 15:52:11
+ * @Last Modified time: 2023-05-06 16:45:50
  */
 
 let vm = new Vue({
@@ -20,21 +20,25 @@ let vm = new Vue({
         //奖品配置项
         zhuanpan_config: [
             {
-                name: '恭喜您获得一等奖',
-                desc: '100分钟语音'
+                name: '一等奖',
+                desc: '烧烤火炉一体机'
             },
             {
-                name: '恭喜您获得二等奖',
-                desc: '3GB流量'
+                name: '二等奖',
+                desc: '足球'
             },
             {
-                name: '恭喜您获得三等奖',
-                desc: '1GB流量'
+                name: '三等奖',
+                desc: '便携榨汁机'
+            },
+            {
+                name: '四等奖',
+                desc: '3GB流量包'
             },
             {
                 name: '很遗憾，未中奖',
                 desc: '谢谢参与'
-            },
+            }
         ]
     },
     methods: {
@@ -60,8 +64,8 @@ let vm = new Vue({
                     //因为css里面定义的动画时间是3s，所以3s后弹出中奖信息
                     setTimeout(() => {
                         let jp = this.zhuanpan_config[n - 1];//奖品信息
-                        let tiptxt = n == 4 ? '下次继续努力哦' : `恭喜您获得了:${jp['desc']}，稍后系统会为您赠送，请注意查收您的短信哦`;
-                        let icons = n == 4 ? 'e' : 's'
+                        let tiptxt = n == 5 ? '下次继续努力哦' : `恭喜您获得了:${jp['desc']}`;
+                        let icons = n == 5 ? 'e' : 's'
                         //弹窗内容，xtip插件的配置项详情可查看：https://ovsexia.github.io/xtiper/
                         xtip.win({
                             type: 'alert',
