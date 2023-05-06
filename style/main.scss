@@ -1,76 +1,88 @@
 /*
-* @Author: soiieking
-* @Date:   2018-09-12 10:37:24
- * @Last Modified time: 2021-06-11 17:33:15
-*/
+ * @Author: liushengxiao 
+ * @Date: 2022-11-01 11:19:54 
+ * @Last Modified by: liushengxiao
+ * @Last Modified time: 2023-05-06 16:13:27
+ */
 
-//
-* {
-    margin: 0px;
-    padding: 0px;
+//大转盘页面配置
+$page_top:2rem; //顶部距离
+$page_color:#25338d; //页面主题色
+
+
+html {
+    background-color: #292929;
 }
 
 body {
-    background-color: #2c2c2c;
-    padding-right: 0px !important;
-}
-
-
-/*大转盘*/
-
-.main {
-    max-width: 1000px;
-    min-height: 150vh;
+    max-width: 750px;
+    min-height: 100vh;
+    background-color: $page_color;
     margin: 0 auto;
-    padding-top: 44vw;
+
 }
 
-//大转盘
-.ly-plate {
+
+
+.myapp {
+    //background-image: url(../images/top-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: $page_top;
+}
+
+.dazhuanpan {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -0.5rem;
     position: relative;
-    width: 100vw;
-    height: 100vw;
-    margin: 0px auto;
-    overflow: hidden;
-    //background-color: red;
-    .rotate-bg {
-        width: 100vw;
-        height: 100vw;
-        background: url(../images/ly-plate.png);
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-        animation: vpp 1s linear 1s forwards;
-    }
-    @keyframes vpp {
-        0% {
-            background-size: 5%;
-            //transform: rotateZ(0deg);
-        }
-        50% {
-            background-size: 100%;
-        }
-        100% {
-            background-size: 90%;
-            //transform: rotateZ(360deg);
+    z-index: 2;
+    padding-bottom: .5rem;
+
+    //用户信息
+    .userinfo {
+        background-color: lighten($page_color, 10%);
+        border-radius: .3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: .3rem;
+        padding: 0.2rem .3rem;
+        border: solid 1px lighten($page_color, 30%);
+        ;
+
+        p {
+            font-size: .3rem;
+            color: #fff;
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
         }
     }
-    .lottery-star {
-        width: 46vw;
-        height: 46vw;
-        position: absolute;
-        top: 27vw;
-        left: 27vw;
-        outline: none;
-        #lotteryBtn {
-            cursor: pointer;
-            position: absolute;
+
+    .zhuanpan {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: .2rem;
+
+        #jpimg {
+            display: block;
             width: 100%;
-            top: 0;
-            left: 0;
+            height: auto;
+            margin: 0 auto;
+            transform: translateZ(0deg);
+            transition: all 3s ease-in-out;
+        }
+
+        #choujiang {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30%;
         }
     }
 }
